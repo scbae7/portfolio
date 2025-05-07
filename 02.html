@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book</title>
+  <style>
+    .book {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      transform: translateX(0%);
+      transition: transform 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .paper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: white;
+      border: 1px solid black;
+      transition: transform 0.5s ease;
+      transform-origin: left;
+      backface-visibility: hidden;
+    }
+    .flipped {
+      transform: rotateY(-180deg);
+    }
+    #prev-btn, #next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    #prev-btn { left: 50px; }
+    #next-btn { right: 350px; }
+  </style>
+</head>
+<body>
+  <div id="prev-btn" style="display: none;">Prev</div>
+  <div class="book on" id="myBook">
+    <div class="paper" id="p1">1</div>
+    <div class="paper" id="p2">2</div>
+    <div class="paper" id="p3">3</div>
+  </div>
+  <div id="next-btn">Next</div>
+  <script>
+    class Book {
+      constructor(id) {
+        this.id = id;
+        this.prevBtn = document.getElementById('prev-btn');
+        this.nextBtn = document.getElementById('next-btn');
+        this.book = document.querySelector('.book.on');
+        this.papers = this.book.querySelectorAll('.paper');
+        this.currentLocation = 0;
+        this.isMobile = window.innerWidth <= 800;
+      }
+      papersZIndex() {
+        for (let i = 0; i < this.papers.length; i++) {
+          this.papers[i].style.zIndex = this.papers.length - i;
+        }
+      }
+      openBook() {
+        this.book.style.transform = "translateX(50%)";
+        this.prevBtn.style.transform = "translateX(-500px)";
+        this.nextBtn.style.transform = "translateX(100px)";
+      }
+      closeBook(isBeginning) {
+        this.book.style.transform = isBeginning ? "translateX(0%)" : "translateX(100%)";
+        this.prevBtn.style.transform = "translateX(-300px)";
+        this.nextBtn.style.transform = "translateX(300px)";
+      }
+      goNextPage() {
+        this.nextBtn.addEventListener("click", () => {
+          if (this.currentLocation < this.papers.length) {
+            this.currentLocation++;
+            if(!this.isMobile){
+              this.openBook();
+            }
+            this.updatePages();
+          }
+          if (this.currentLocation === this.papers.length) {
+            if(!this.isMobile){
+              this.closeBook();
+            }
+            this.nextBtn.style.display = "none";
+          }
+          this.prevBtn.style.display = this.currentLocation > 0 ? "block" : "none";
+        });
+      }
+      goPrevPage() {
+        this.prevBtn.addEventListener("click", () => {
+          if (this.currentLocation > 0) {
+            this.currentLocation--;
+            if(!this.isMobile){
+              this.openBook();
+            }
+            this.updatePages();
+          }
+          if (this.currentLocation == 0) {
+            if(!this.isMobile){
+              this.closeBook(true);
+            }
+            this.prevBtn.style.display = "none";
+          }
+          this.nextBtn.style.display = this.currentLocation < this.papers.length ? "block" : "none";
+        });
+      }
+      updatePages() {
+        for (let i = 0; i < this.papers.length; i++) {
+          const paper = this.book.querySelector(`#p${i + 1}`);
+          if (i < this.currentLocation) {
+            paper.classList.add("flipped");
+            paper.style.zIndex = i + 1;
+          } else {
+            paper.classList.remove("flipped");
+            paper.style.zIndex = this.papers.length - i;
+          }
+        }
+      }
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const myBook = new Book('myBook');
+      myBook.papersZIndex();
+      myBook.goPrevPage();
+      myBook.goNextPage();
+    })
+  </script>
+</body>
+</html>

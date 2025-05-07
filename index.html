@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Book</title>
+    <script src="./assets/js/display.js"></script>
+    <script src="./assets/js/percent.js"></script>
+    <script src="./assets/js/book.js" defer></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/book.css">
+</head>
+
+<body>
+    <!-- Previous Button -->
+    <button id="prev-btn" class="arrowBtn">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book largeBook">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front cover">
+                <div id="f1" class="front-content cover">
+                    <h1>석찬's Book</h1><br>
+                    <h2>넘겨주세요</h2>
+                </div>
+            </div>
+            <div class="back cover">
+                <div id="b1" class="back-content cover">
+                    <!-- <h1>Back 1</h1> -->
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1 class="pageTitle">about me</h1>
+                    <div class="mainBg"></div>
+
+                    <h2>배석찬</h2>
+                    <h3>1996. 07. 27</h3>
+                    <h3>대기만성형 개발자</h3>
+                    <h3>경기도 안산시 단원구 거주</h3>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1 class="pageTitle">my skill</h1>
+                    <div class="skill-title">FRONT-END</div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic1"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic3"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic5"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic8"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic9"></span>
+                        </div>
+                    </div>
+                    <div class="skill-title">BACK-END</div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic6"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic7"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic10"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <!-- 블로그 -->
+                <div id="f3" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Board Blog</h2>
+                    <div class="portBg portBg8"></div>
+                    <p>front는 react와 typescript를 <br>back은 nest.js를 이용해서 <br>블로그를 구현했습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33072" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <!-- 투두리스트 -->
+                <div id="b3" class="back-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Todo List</h2>
+                    <div class="portBg portBg1"></div>
+                    <p>Mysql을 사용해서 CRUD를 하고 회원가입을 적용해서 투두리스트를 만들었습니다. MVC패턴으로 파일을 분리했습니다. </p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33073/user/login" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 4 -->
+        <div id="p4" class="paper">
+            <!-- 점수그래프 -->
+            <div class="front">
+                <div id="f4" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Score Graph</h2>
+                    <div class="portBg portBg6"></div>
+                    <p>Math 메서드와 canvas fillRect 메서드의 점찍기를 이용해서 그래프를 그렸습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/ScoreGraph/scoreGraph.html" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <!-- 행렬계산기 -->
+                <div id="b4" class="back-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Matrix Calculator</h2>
+                    <div class="portBg portBg7"></div>
+                    <p>배열을 이용해서 행렬 계산기를 만들었습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/Maxtrix/matrixCalculator.html" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 5 -->
+        <div id="p5" class="paper">
+            <div class="front">
+                <!-- 암데이터센터 -->
+                <div id="f5" class="front-content">
+                    <h1 class="pageTitle">team project</h1>
+                    <h2>Cancer Dashboard</h2>
+                    <div class="portBg portBg2"></div>
+                    <p>공공 데이터 포털 API를 이용해 사용하기 쉽게 객체로 재구성해서 Chart.js 로 암 통계 대시보드를 만들었습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/CancerDashboard/" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/pdf/CancerDashboard.pdf" target="_blank">
+                            <button class="portBtn">PDF</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <!-- 안산시 -->
+                <div id="b5" class="back-content">
+                    <h1 class="pageTitle">team project</h1>
+                    <h2>안산시 도시환경</h2>
+                    <div class="portBg portBg4"></div>
+                    <p>Json server를 이용해서 간단한 로그인과 실시간으로 Json 데이터를 생성하는 작업을 했습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33183" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/pdf/AnsanCity.pdf" target="_blank">
+                            <button class="portBtn">PDF</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 6 -->
+        <div id="p6" class="paper">
+            <div class="front">
+                <div id="f6" class="front-content aLS">
+                    <h1 class="pageTitle">Contact</h1>
+                    <p>전화번호 : 010-3312-5279</p>
+                    <p>이메일 : sna12345 @ naver.com</p>
+                    <p class="mb20">카카오톡 ID : bae </p>
+                    <textarea class="mb20" name="contact" id="contact" cols="30" rows="10"></textarea>
+                    <a href="mailto:sna12345@naver.com">
+                        <button class="contactBtn">me</button>
+                    </a>
+                </div>
+            </div>
+            <div class="back cover">
+                <div id="b6" class="back-content cover">
+                    <h1>감사합니다</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book -->
+    <div id="book-small" class="book smallBook">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front cover">
+                <div id="f1" class="front-content cover">
+                    <h1>석찬's Book</h1><br>
+                    <h2>넘겨주세요</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1 class="pageTitle">about me</h1>
+                    <div class="mainBg"></div>
+                    <h2>배석찬</h2>
+                    <h3>1996. 07. 27</h3>
+                    <h3>대기만성형 개발자</h3>
+                    <h3>경기도 안산시 단원구 거주</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h1 class="pageTitle">my skill</h1>
+                    <div class="skill-title">FRONT-END</div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic1"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic3"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic5"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic8"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic9"></span>
+                        </div>
+                    </div>
+                    <div class="skill-title">BACK-END</div>
+                    <div class="skill-box">
+                        <div class="skill-contents">
+                            <span class="skill-icon ic6"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic7"></span>
+                        </div>
+                        <div class="skill-contents">
+                            <span class="skill-icon ic10"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 4 -->
+        <div id="p4" class="paper">
+            <div class="front">
+                <div id="f4" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Board Blog</h2>
+                    <div class="portBg portBg8"></div>
+                    <p>front는 react와 typescript를 <br>back은 nest.js를 이용해서 <br>블로그를 구현했습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33072" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 5 -->
+        <div id="p5" class="paper">
+            <div class="front">
+                <div id="f5" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Todo List</h2>
+                    <div class="portBg portBg1"></div>
+                    <p>Mysql을 사용해서 CRUD를 하고 회원가입을 적용해서 투두리스트를 만들었습니다. MVC패턴으로 파일을 분리했습니다. </p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33073/user/login" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 6 -->
+        <div id="p6" class="paper">
+            <div class="front">
+                <div id="f6" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Score Graph</h2>
+                    <div class="portBg portBg6"></div>
+                    <p>Math 메서드와 canvas fillRect 메서드의 점찍기를 이용해서 그래프를 그렸습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/ScoreGraph/scoreGraph.html" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 7 -->
+        <div id="p7" class="paper">
+            <div class="front">
+                <div id="f7" class="front-content">
+                    <h1 class="pageTitle">portfolio</h1>
+                    <h2>Matrix Calculator</h2>
+                    <div class="portBg portBg7"></div>
+                    <p>배열을 이용해서 행렬 계산기를 만들었습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/Maxtrix/matrixCalculator.html" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 8 -->
+        <div id="p8" class="paper">
+            <div class="front">
+                <div id="f8" class="front-content">
+                    <h1 class="pageTitle">team project</h1>
+                    <h2>Cancer Dashboard</h2>
+                    <div class="portBg portBg2"></div>
+                    <p>공공 데이터 포털 API를 이용해 사용하기 쉽게 객체로 재구성해서 Chart.js 로 암 통계 대시보드를 만들었습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/CancerDashboard/" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/pdf/CancerDashboard.pdf" target="_blank">
+                            <button class="portBtn">PDF</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 9 -->
+        <div id="p9" class="paper">
+            <div class="front">
+                <div id="f9" class="front-content">
+                    <h1 class="pageTitle">team project</h1>
+                    <h2>안산시 도시환경</h2>
+                    <div class="portBg portBg4"></div>
+                    <p>Json server를 이용해서 간단한 로그인과 실시간으로 Json 데이터를 생성하는 작업을 했습니다.</p>
+                    <div class="btnCont">
+                        <a href="http://kkms4001.iptime.org:33183" target="_blank">
+                            <button class="portBtn">SITE</button>
+                        </a>
+                        <a href="http://kkms4001.iptime.org/~c19st08/portfolio/pdf/AnsanCity.pdf" target="_blank">
+                            <button class="portBtn">PDF</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 10 -->
+        <div id="p10" class="paper">
+            <div class="front">
+                <div id="f10" class="front-content aLS">
+                    <h1 class="pageTitle">Contact</h1>
+                    <p>전화번호 : 010-3312-5279</p>
+                    <p>이메일 : sna12345 @ naver.com</p>
+                    <p class="mb20">카카오톡 ID : bae </p>
+                    <textarea class="mb20" name="contact" id="contact" cols="30" rows="10"></textarea>
+                    <a href="mailto:sna12345@naver.com">
+                        <button class="contactBtn">me</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 11 -->
+        <div id="p11" class="paper">
+            <div class="front cover">
+                <div id="f11" class="front-content cover">
+                    <h1>감사합니다</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Button -->
+    <button id="next-btn" class="arrowBtn">
+        <span class="material-symbols-outlined">
+            arrow_forward
+        </span>
+    </button>
+
+    <div id="leaves">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</body>
+
+</html>
