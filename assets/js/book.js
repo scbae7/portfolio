@@ -111,3 +111,11 @@ document.addEventListener("DOMContentLoaded",()=>{
   myBook.goPrevPage();
   myBook.goNextPage();
 })
+document.addEventListener("keydown", (e) => {
+  const myBook = new Book('myBook');
+  if (e.key === "ArrowRight") {
+    myBook.nextBtn.click();
+  } else if (e.key === "ArrowLeft") {
+    myBook.prevBtn.click();
+  }
+});

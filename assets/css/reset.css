@@ -75,11 +75,16 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 /* 링크 초기화 */
-a,
-a:hover,
-a:focus {
-  color: inherit;
+
+/* 기본 상태 및 방문한 링크 */
+a {
+  color: white;
   text-decoration: none;
+}
+
+/* hover/focus 상태는 방문 여부 관계없이 덮어쓰기 */
+a:hover {
+  color: black;
 }
 /* 버튼 초기화 */
 button,
