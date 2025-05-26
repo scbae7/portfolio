@@ -87,11 +87,14 @@ body {
 }
 .front-content > p {
     width: 80%;
-    font-size: 20px;
+    line-height: 1.6;       /* 줄 간격 늘려서 읽기 쉽게 */
+    white-space: pre-line;
 }
+
 .back-content > p {
     width: 80%;
-    font-size: 20px;
+    line-height: 1.6;       /* 줄 간격 늘려서 읽기 쉽게 */
+    white-space: pre-line;
 }
 .back-content {
     transform: rotateY(180deg);
