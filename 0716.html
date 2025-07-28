@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>배석찬 포트폴리오</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        background: #f9f9f9;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #007bff;
+      }
+      section {
+        margin-bottom: 3rem;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+      }
+      /* About Me */
+      #about ul li {
+        display: flex;
+        align-items: center;
+      }
+      #about ul li::before {
+        content: '👉';
+        margin-right: 0.5rem;
+      }
+      /* Skills */
+      #skills ul li {
+        background: white;
+        padding: 0.6rem 1rem;
+        margin-bottom: 0.7rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 123 255 / 0.15);
+      }
+      #skills strong {
+        color: #0056b3;
+      }
+      /* Projects & Team */
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.2rem;
+      }
+      .card {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgb(0 123 255 / 0.2);
+        display: flex;
+        flex-direction: column;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 0.8rem;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+      }
+      .card h3 {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+      }
+      .card p {
+        flex-grow: 1;
+        margin-bottom: 0.8rem;
+        color: #555;
+      }
+      .links {
+        margin-top: auto;
+      }
+      .links a {
+        margin-right: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+      /* Contact */
+      #contact a {
+        display: inline-block;
+        margin-bottom: 0.7rem;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      #contact a:hover {
+        text-decoration: underline;
+      }
+      /* Responsive tweaks */
+      @media (max-width: 480px) {
+        body {
+          margin: 1rem;
+          padding: 0 0.5rem;
+        }
+        .card-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="about">
+      <h1>👋 About Me</h1>
+      <ul>
+        <li><strong>배석찬</strong> | 199x년 xx월 xx일</li>
+        <li>사용자 친화적인 UI/UX 구현에 집중</li>
+        <li>React, TypeScript, Firebase 활용 중</li>
+        <li>풀스택 역량 강화 및 협업 경험 확대 목표</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>
+          <strong>Frontend:</strong> HTML, CSS (Flexbox, Grid), JavaScript,
+          React, TypeScript
+        </li>
+        <li>
+          <strong>Backend:</strong> Node.js, Express, NestJS, MySQL, Firebase
+          (Auth/Firestore)
+        </li>
+        <li>
+          <strong>Tools & DevOps:</strong> Git, GitHub, Vercel, Render, Railway,
+          JSON-server
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>💡 Projects</h2>
+      <div class="card-list">
+        <article class="card">
+          <img
+            src="https://via.placeholder.com/400x225?text=Board+Blog"
+            alt="Board Blog 썸네일"
+          />
+          <h3>Board Blog</h3>
+          <p>
+            React, TS, NestJS, Firebase 기반 블로그 FE + BE 구현. 인증 및
+            데이터베이스 연동 포함.
+          </p>
+          <div class="links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://via.placeholder.com/400x225?text=Todo+List"
+            alt="Todo List 썸네일"
+          />
+          <h3>Todo List</h3>
+          <p>
+            Node.js, Express, MySQL, Pug(SSR) 활용한 투두 CRUD 및 회원가입 기능
+            구현.
+          </p>
+          <div class="links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+        <!-- 추가 프로젝트 카드 여기서 계속 -->
+      </div>
+    </section>
+
+    <section id="team-projects">
+      <h2>🤝 Team Projects</h2>
+      <div class="card-list">
+        <article class="card">
+          <img
+            src="https://via.placeholder.com/400x225?text=Cancer+Dashboard"
+            alt="Cancer Dashboard 스크린샷"
+          />
+          <h3>Cancer Dashboard</h3>
+          <p>API 기반 통계 대시보드, Chart.js로 시각화 작업 진행.</p>
+          <div class="links">
+            <a href="#" target="_blank" rel="noopener">PDF 자료</a>
+            <!-- 가능하면 웹 데모 링크 추가 -->
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://via.placeholder.com/400x225?text=안산시+도시환경+Dashboard"
+            alt="안산시 도시환경 Dashboard 스크린샷"
+          />
+          <h3>안산시 도시환경 Dashboard</h3>
+          <p>JSON-server, 로그인, 실시간 데이터 반영 대시보드 개발.</p>
+          <div class="links">
+            <a href="#" target="_blank" rel="noopener">PDF 자료</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <a href="mailto:your.email@example.com" aria-label="이메일 보내기"
+        >✉️ Email me</a
+      ><br />
+      <a
+        href="https://github.com/yourgithubid"
+        target="_blank"
+        rel="noopener"
+        aria-label="GitHub 프로필"
+        >🐙 GitHub</a
+      >
+    </section>
+  </body>
+</html>

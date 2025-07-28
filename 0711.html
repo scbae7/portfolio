@@ -11,7 +11,7 @@
     <script src="./assets/js/display.js"></script>
     <script src="./assets/js/percent.js"></script>
     <script src="./assets/js/book.js" defer></script>
-    <script src="./assets/js/toggle.js" defer></script>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -53,7 +53,8 @@
 
             <h2>배석찬</h2>
             <h3>1996. 07. 27</h3>
-            <h3>웹 프론트엔드 개발자 지망생</h3>
+            <h3>대기만성형 개발자</h3>
+            <h3>경기도 안산시 단원구 거주</h3>
           </div>
         </div>
         <div class="back">
@@ -97,21 +98,20 @@
       <!-- Paper 3 -->
       <div id="p3" class="paper">
         <div class="front">
-          <!-- chat app -->
+          <!-- 블로그 -->
           <div id="f3" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Chat App</h2>
-            <div class="portBg portBg9"></div>
-            <p>Chat App</p>
+            <h2>Board Blog</h2>
+            <div class="portBg portBg8"></div>
+            <p>
+              React와 TypeScript로 클라이언트 사이드 렌더링 기반 블로그
+              프론트엔드를 개발했고, NestJS로 RESTful API 백엔드를 구축했습니다.
+              프론트엔드는 Vercel, 백엔드는 Render에 배포했으며, Railway
+              데이터베이스를 연동해 블로그 서비스를 구현했습니다.
+            </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/chat-app"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://chat-app-alpha-coral.vercel.app/"
+                href="https://blog-front-nu.vercel.app/"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -123,34 +123,16 @@
           <!-- 투두리스트 -->
           <div id="b3" class="back-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Board Blog</h2>
-            <div class="portBg portBg8"></div>
+            <h2>Todo List</h2>
+            <div class="portBg portBg1"></div>
             <p>
-              React와 TypeScript로 클라이언트 사이드 렌더링 기반 블로그
-              프론트엔드를 개발했고, NestJS로 RESTful API 백엔드를 구축했습니다.
-              프론트엔드는 Vercel, 백엔드는 Render에 배포했으며, Railway
-              데이터베이스를 연동해 블로그 서비스를 구현했습니다.
+              Node.js와 Express로 MVC 구조의 투두리스트를 개발했고, MySQL로
+              CRUD와 회원가입을 구현했습니다. Pug 템플릿으로 SSR을 적용해 동적
+              페이지를 만들었으며, Render 플랫폼에 배포했습니다.
             </p>
-            <div class="btnCont dropdown">
-              <button onclick="toggleGitHubDropdown(this)" class="portBtn">
-                GitHub ▼
-              </button>
-              <div class="github-dropdown dropdown-menu" style="display: none">
-                <a
-                  href="https://github.com/scbae7/blog-front"
-                  target="_blank"
-                  class="portBtn"
-                  >Front-end</a
-                ><br />
-                <a
-                  href="https://github.com/scbae7/blog-back"
-                  target="_blank"
-                  class="portBtn"
-                  >Back-end</a
-                >
-              </div>
+            <div class="btnCont">
               <a
-                href="https://blog-front-nu.vercel.app/"
+                href="https://todolist2-d0cr.onrender.com/user/login"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -165,22 +147,16 @@
         <div class="front">
           <div id="f4" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Todo List</h2>
-            <div class="portBg portBg1"></div>
+            <h2>Score Graph</h2>
+            <div class="portBg portBg6"></div>
             <p>
-              Node.js와 Express로 MVC 구조의 투두리스트를 개발했고, MySQL로
-              CRUD와 회원가입을 구현했습니다. Pug 템플릿으로 SSR을 적용해 동적
-              페이지를 만들었으며, Render 플랫폼에 배포했습니다.
+              JavaScript의 Math 메서드를 활용해 그래프의 점 좌표를 계산하고,
+              canvas의 fillRect() 메서드를 사용해 하나하나 점을 찍어 그래프를
+              그렸습니다.
             </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/todoList2"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://todolist2-d0cr.onrender.com/user/login"
+                href="https://scbae7.github.io/scoreGraph/scoreGraph.html"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -192,22 +168,16 @@
           <!-- 행렬계산기 -->
           <div id="b4" class="back-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Score Graph</h2>
-            <div class="portBg portBg6"></div>
+            <h2>Matrix Calculator</h2>
+            <div class="portBg portBg7"></div>
             <p>
-              JavaScript의 Math 메서드를 활용해 그래프의 점 좌표를 계산하고,
-              canvas의 fillRect() 메서드를 사용해 하나하나 점을 찍어 그래프를
-              그렸습니다.
+              배열을 활용해 기본 행렬 연산을 구현한 계산기를 만들었고, 덧셈,
+              뺄셈, 곱셈 등 행렬 계산 과정을 직접 처리하며 배열 조작 능력을
+              키웠습니다.
             </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/scoreGraph"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://scbae7.github.io/scoreGraph/scoreGraph.html"
+                href="https://scbae7.github.io/matrix/matrixCalculator.html"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -221,33 +191,6 @@
         <div class="front">
           <!-- 암데이터센터 -->
           <div id="f5" class="front-content">
-            <h1 class="pageTitle">portfolio</h1>
-            <h2>Matrix Calculator</h2>
-            <div class="portBg portBg7"></div>
-            <p>
-              배열을 활용해 기본 행렬 연산을 구현한 계산기를 만들었고, 덧셈,
-              뺄셈, 곱셈 등 행렬 계산 과정을 직접 처리하며 배열 조작 능력을
-              키웠습니다.
-            </p>
-            <div class="btnCont">
-              <a
-                href="https://github.com/scbae7/matrix"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://scbae7.github.io/matrix/matrixCalculator.html"
-                class="portBtn"
-                target="_blank"
-                >SITE</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="back">
-          <!-- 안산시 -->
-          <div id="b5" class="back-content">
             <h1 class="pageTitle">team project</h1>
             <h2>Cancer Dashboard</h2>
             <div class="portBg portBg2"></div>
@@ -272,11 +215,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Paper 6 -->
-      <div id="p6" class="paper">
-        <div class="front">
-          <div id="f6" class="front-content">
+        <div class="back">
+          <!-- 안산시 -->
+          <div id="b5" class="back-content">
             <h1 class="pageTitle">team project</h1>
             <h2>안산시 도시환경</h2>
             <div class="portBg portBg4"></div>
@@ -288,7 +229,7 @@
             <div class="btnCont">
               <a
                 href="http://kkms4001.iptime.org:33183"
-                class="portBtn disabled-link"
+                class="portBtn"
                 target="_blank"
                 >SITE</a
               >
@@ -301,8 +242,11 @@
             </div>
           </div>
         </div>
-        <div class="back">
-          <div id="b6" class="back-content aLS">
+      </div>
+      <!-- Paper 6 -->
+      <div id="p6" class="paper">
+        <div class="front">
+          <div id="f6" class="front-content aLS">
             <h1 class="pageTitle">Contact</h1>
             <p>전화번호 : 010-3312-5279</p>
             <p>이메일 : sna12345 @ naver.com</p>
@@ -312,12 +256,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Paper 7 -->
-      <div id="p7" class="paper">
-        <div class="front cover"></div>
         <div class="back cover">
-          <div id="b7" class="back-content cover">
+          <div id="b6" class="back-content cover">
             <h1>감사합니다</h1>
           </div>
         </div>
@@ -394,18 +334,17 @@
         <div class="front">
           <div id="f4" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Chat App</h2>
-            <div class="portBg portBg9"></div>
-            <p>Chat App</p>
+            <h2>Board Blog</h2>
+            <div class="portBg portBg8"></div>
+            <p>
+              React와 TypeScript로 클라이언트 사이드 렌더링 기반 블로그
+              프론트엔드를 개발했고, NestJS로 RESTful API 백엔드를 구축했습니다.
+              프론트엔드는 Vercel, 백엔드는 Render에 배포했으며, Railway
+              데이터베이스를 연동해 블로그 서비스를 구현했습니다.
+            </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/chat-app"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://chat-app-alpha-coral.vercel.app/"
+                href="https://blog-front-nu.vercel.app/"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -419,34 +358,16 @@
         <div class="front">
           <div id="f5" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Board Blog</h2>
-            <div class="portBg portBg8"></div>
+            <h2>Todo List</h2>
+            <div class="portBg portBg1"></div>
             <p>
-              React와 TypeScript로 클라이언트 사이드 렌더링 기반 블로그
-              프론트엔드를 개발했고, NestJS로 RESTful API 백엔드를 구축했습니다.
-              프론트엔드는 Vercel, 백엔드는 Render에 배포했으며, Railway
-              데이터베이스를 연동해 블로그 서비스를 구현했습니다.
+              Node.js와 Express로 MVC 구조의 투두리스트를 개발했고, MySQL로
+              CRUD와 회원가입을 구현했습니다. Pug 템플릿으로 SSR을 적용해 동적
+              페이지를 만들었으며, Render 플랫폼에 배포했습니다.
             </p>
-            <div class="btnCont dropdown">
-              <button onclick="toggleGitHubDropdown(this)" class="portBtn">
-                GitHub ▼
-              </button>
-              <div class="github-dropdown dropdown-menu" style="display: none">
-                <a
-                  href="https://github.com/scbae7/blog-front"
-                  target="_blank"
-                  class="portBtn"
-                  >Front-end</a
-                >
-                <a
-                  href="https://github.com/scbae7/blog-back"
-                  target="_blank"
-                  class="portBtn"
-                  >Back-end</a
-                >
-              </div>
+            <div class="btnCont">
               <a
-                href="https://blog-front-nu.vercel.app/"
+                href="https://todolist2-d0cr.onrender.com/user/login"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -460,22 +381,16 @@
         <div class="front">
           <div id="f6" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Todo List</h2>
-            <div class="portBg portBg1"></div>
+            <h2>Score Graph</h2>
+            <div class="portBg portBg6"></div>
             <p>
-              Node.js와 Express로 MVC 구조의 투두리스트를 개발했고, MySQL로
-              CRUD와 회원가입을 구현했습니다. Pug 템플릿으로 SSR을 적용해 동적
-              페이지를 만들었으며, Render 플랫폼에 배포했습니다.
+              JavaScript의 Math 메서드를 활용해 그래프의 점 좌표를 계산하고,
+              canvas의 fillRect() 메서드를 사용해 하나하나 점을 찍어 그래프를
+              그렸습니다.
             </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/todoList2"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://todolist2-d0cr.onrender.com/user/login"
+                href="https://scbae7.github.io/scoreGraph/scoreGraph.html"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -489,22 +404,16 @@
         <div class="front">
           <div id="f7" class="front-content">
             <h1 class="pageTitle">portfolio</h1>
-            <h2>Score Graph</h2>
-            <div class="portBg portBg6"></div>
+            <h2>Matrix Calculator</h2>
+            <div class="portBg portBg7"></div>
             <p>
-              JavaScript의 Math 메서드를 활용해 그래프의 점 좌표를 계산하고,
-              canvas의 fillRect() 메서드를 사용해 하나하나 점을 찍어 그래프를
-              그렸습니다.
+              배열을 활용해 기본 행렬 연산을 구현한 계산기를 만들었고, 덧셈,
+              뺄셈, 곱셈 등 행렬 계산 과정을 직접 처리하며 배열 조작 능력을
+              키웠습니다.
             </p>
             <div class="btnCont">
               <a
-                href="https://github.com/scbae7/scoreGraph"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://scbae7.github.io/scoreGraph/scoreGraph.html"
+                href="https://scbae7.github.io/matrix/matrixCalculator.html"
                 class="portBtn"
                 target="_blank"
                 >SITE</a
@@ -517,35 +426,6 @@
       <div id="p8" class="paper">
         <div class="front">
           <div id="f8" class="front-content">
-            <h1 class="pageTitle">portfolio</h1>
-            <h2>Matrix Calculator</h2>
-            <div class="portBg portBg7"></div>
-            <p>
-              배열을 활용해 기본 행렬 연산을 구현한 계산기를 만들었고, 덧셈,
-              뺄셈, 곱셈 등 행렬 계산 과정을 직접 처리하며 배열 조작 능력을
-              키웠습니다.
-            </p>
-            <div class="btnCont">
-              <a
-                href="https://github.com/scbae7/matrix"
-                class="portBtn"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://scbae7.github.io/matrix/matrixCalculator.html"
-                class="portBtn"
-                target="_blank"
-                >SITE</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Paper 9 -->
-      <div id="p9" class="paper">
-        <div class="front">
-          <div id="f9" class="front-content">
             <h1 class="pageTitle">team project</h1>
             <h2>Cancer Dashboard</h2>
             <div class="portBg portBg2"></div>
@@ -571,10 +451,10 @@
           </div>
         </div>
       </div>
-      <!-- Paper 10 -->
-      <div id="p10" class="paper">
+      <!-- Paper 9 -->
+      <div id="p9" class="paper">
         <div class="front">
-          <div id="f10" class="front-content">
+          <div id="f9" class="front-content">
             <h1 class="pageTitle">team project</h1>
             <h2>안산시 도시환경</h2>
             <div class="portBg portBg4"></div>
@@ -586,7 +466,7 @@
             <div class="btnCont">
               <a
                 href="http://kkms4001.iptime.org:33183"
-                class="portBtn disabled-link"
+                class="portBtn"
                 target="_blank"
                 >SITE</a
               >
@@ -600,10 +480,10 @@
           </div>
         </div>
       </div>
-      <!-- Paper 11 -->
-      <div id="p11" class="paper">
+      <!-- Paper 10 -->
+      <div id="p10" class="paper">
         <div class="front">
-          <div id="f11" class="front-content aLS">
+          <div id="f10" class="front-content aLS">
             <h1 class="pageTitle">Contact</h1>
             <p>전화번호 : 010-3312-5279</p>
             <p>이메일 : sna12345 @ naver.com</p>
@@ -614,10 +494,10 @@
           </div>
         </div>
       </div>
-      <!-- Paper 12 -->
-      <div id="p12" class="paper">
+      <!-- Paper 11 -->
+      <div id="p11" class="paper">
         <div class="front cover">
-          <div id="f12" class="front-content cover">
+          <div id="f11" class="front-content cover">
             <h1>감사합니다</h1>
           </div>
         </div>

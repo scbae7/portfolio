@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+/* @font-face {
   font-family: "GmarketSans";
   font-weight: 300;
   font-style: normal;
@@ -43,4 +43,6 @@
     url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf")
       format("truetype");
   font-display: swap;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');

@@ -10,10 +10,10 @@
   --dark_bg: #000;
   --dark_border: #2e2e30;
 
-  --main_font: "Saol";
-  --sub_font: "Rajdhani";
-  --kor_font: "Chosunilbo";
-  --subKor_font: "S-CoreDream";
+  --main_font: 'Saol';
+  --sub_font: 'Rajdhani';
+  --kor_font: 'Chosunilbo';
+  --subKor_font: 'S-CoreDream';
 }
 /* border-box 초기화 */
 *,
@@ -69,10 +69,6 @@ textarea {
   font-size: 16px;
   line-height: 1.4;
   color: #202020;
-  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
-    helvetica, "Apple SD Gothic Neo", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 /* 링크 초기화 */
 
@@ -88,9 +84,9 @@ a:hover {
 }
 /* 버튼 초기화 */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }
